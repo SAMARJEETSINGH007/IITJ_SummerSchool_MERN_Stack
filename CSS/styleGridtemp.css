@@ -1,0 +1,33 @@
+.container {
+	width: 200px;
+	height: 150px;
+	display: grid;
+	grid-template-columns: 50px 50px 50px 50px;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+		"header header header header"
+		"main main main main"
+		"sidebar sidebar sidebar sidebar"
+		"footer footer footer footer";
+}
+
+#headerdiv {
+	background-color: rgb(190, 188, 246);
+	grid-area: header;
+}
+
+#maindiv {
+	background-color: rgb(114, 111, 197);
+	grid-area: main;
+}
+
+#sidebardiv {
+	background-color: rgb(59, 56, 153);
+	grid-area: sidebar;
+}
+
+#footerdiv {
+	background-color: rgb(39, 36, 102);
+	grid-area: footer;
+}
+

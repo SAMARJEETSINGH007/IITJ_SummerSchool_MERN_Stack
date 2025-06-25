@@ -1,0 +1,23 @@
+#testBox1
+{
+	display:inline-block;
+	height:100px;
+	width:100px;
+	background-color:blue;
+	box-shadow:10px 10px 5px -2px lightblue;
+}
+#testBox2
+{
+	display:inline-block;
+	height:100px;
+	width:100px;
+	background-color:red;
+	box-shadow:20px;
+}
+#testBox3
+{
+	display:inline-block;
+	height:100px;
+	width:100px;
+	background-color:green;
+}

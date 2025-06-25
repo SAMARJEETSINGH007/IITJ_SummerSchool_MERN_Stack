@@ -1,0 +1,8 @@
+GRID PROPERTY
+from grid-template  *SHORT HAND*
+link:https://css-tricks.com/snippets/css/complete-guide-grid/
+
+MEDIA PROPERTY
+study from scratch.
+
+
