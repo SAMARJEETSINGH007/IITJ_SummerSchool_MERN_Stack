@@ -1,0 +1,81 @@
+/*#testDiv1
+{
+	width:100px;
+	height:100px;
+	background-color:indigo;
+	transition:background-color 5s ease-in-out;
+}
+#testDiv1:hover
+{
+	background-color:red;
+}*/
+/*
+#testDiv1
+{
+	width:100px;
+	height:100px;
+	background-color:indigo;
+	transition:width 1s ease-in-out, background-color 0.5s ease;
+}
+#testDiv1:hover
+{
+	width:200px;
+	background-color:red;
+}*/
+/*
+#testDiv1
+{
+	width:100px;
+	height:100px;
+	background-color:indigo;
+	transition:background-color 0.5s ease, transform 0.5s ease-in-out;
+}
+#testDiv1:hover
+{
+	background-color:red;
+	transform:scale(1.5);
+}*/
+@keyframes colorChange
+{
+	from
+	{
+		background-color:blue;
+	}
+	to
+	{
+		background-color:red;
+	}
+}
+#testDiv1
+{
+	width:100px;
+	height:100px;i
+	background-color:blue;
+	animation:colorChange 2s ease-in-out infinite alternate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

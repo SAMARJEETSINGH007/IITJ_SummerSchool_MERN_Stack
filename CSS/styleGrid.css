@@ -25,6 +25,8 @@
 	"header header header header"
 	"main main . sidebar"
 	"footer footer footer footer";
+	column-gap:10px;
+	row-gap:10px;
 }
 #headerdiv
 {
@@ -45,4 +47,45 @@
 {
 	background-color:rgb(39, 36, 102);
 	grid-area:footer;
+}
+/*GRID TEMPLATE*/
+/*.container2
+{
+	grid-template:
+	[row1-start] "header header header" 25px [row1-end]
+	[row2-start]"footer footer footer" 25px[row2-end]
+	/auto 50px auto
+}*/
+/*The grid property is not recommended to be used rather go for the manual creation.*/
+.myBox
+{
+	position:fixed;
+	border:1px solid black;
+	display:grid;
+	grid-template-rows:50px auto 50px;
+	grid-template-columns:50px auto 50px;
+	grid-template-areas:
+	"hdr hdr hdr"
+	"mn . mn"
+	"sdbr ftr ftr";
+}
+#hdr
+{
+	background-color:red;
+	grid-area:hdr;
+}
+#mn
+{
+	background-color:blue;
+	grid-area:mn;
+}
+#sdbr
+{
+	background-color:green;
+	grid-area:sdbr;
+}
+#ftr
+{
+	background-color:golden;
+	grid-area:ftr;
 }

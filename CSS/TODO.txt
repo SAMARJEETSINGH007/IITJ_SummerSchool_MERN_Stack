@@ -5,4 +5,5 @@ link:https://css-tricks.com/snippets/css/complete-guide-grid/
 MEDIA PROPERTY
 study from scratch.
 
-
+ANIMATIONS AND TRANSITIONS
+study extensively from the website sir has given very limited content.
