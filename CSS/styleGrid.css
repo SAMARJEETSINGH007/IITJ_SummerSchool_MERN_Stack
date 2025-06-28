@@ -66,7 +66,7 @@
 	grid-template-columns:50px auto 50px;
 	grid-template-areas:
 	"hdr hdr hdr"
-	"mn . mn"
+	"mn  mn mn"
 	"sdbr ftr ftr";
 }
 #hdr

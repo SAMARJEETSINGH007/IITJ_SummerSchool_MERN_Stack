@@ -1,6 +1,8 @@
 GRID PROPERTY
 from grid-template  *SHORT HAND*
 link:https://css-tricks.com/snippets/css/complete-guide-grid/
+in grid ensure that you don't break the continuity of the divs. Logically that wont make any sense. otherwise you could have had used any other div. So
+dont break it. If you want a block with the same prop. as the prev one but without the continuity just declare a new one with the same prop.
 
 MEDIA PROPERTY
 study from scratch.
