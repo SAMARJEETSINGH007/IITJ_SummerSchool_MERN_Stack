@@ -6,35 +6,157 @@
 		<link rel="stylesheet" href="styleBlog3.css">
 		<link rel="icon" type="image/png" href="assets/icon.png">
 		<title>My blog</title>
+		<style>
+					.typewriter pre {
+		  overflow: hidden; /* Ensures the content is not revealed until the animation */
+		 /*border-right: .15em solid orange;*/ /* The typwriter cursor */
+		  white-space: nowrap; /* Keeps the content on a single line */
+		  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+		  letter-spacing: .15em; /* Adjust as needed */
+		  animation: 
+		    typing 3.5s steps(40, end),
+		    blink-caret .75s step-end infinite;
+		}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+/*@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}*/
+			body
+			{
+				font-family:sans-serrif;
+				margin:40px;
+			}
+			.menu
+			{
+				width:300px;	
+			}
+			.menu-item
+			{
+				display:inline-block;
+				background-color:red;
+				margin-bottom:10px;
+				padding:1px;
+				/*border:1px solid black;*/
+				cursor:pointer;
+			}
+			.dropdown-content
+			{
+				max-height:0;
+				overflow:hidden;/*Why?*/
+				background-color:blue;
+				transition:max-height 0.5s ease;
+				padding:0 10px;
+			}
+			.menu-item:hover .dropdown-content
+			{
+				max-height:500px;
+				/*padding:10px;*/
+			}
+			.main-content
+			{
+				background-color:gold;
+				padding:20px;
+				/*border:1px solid green;*/
+				margin-top:20px;
+			}
+	        </style>
+	
 	</head>
 	<body>
 		<div id="navigation">
 			<div style="height:50px; width:100%; display:flex; justify-content:center">
-				<img src="assets/CompanyIcon.png"></img>
+				<img src="assets/CompanyIcon.png" id="BlogIcon"></img>
 			</div>
+			<br>
+			<br>
 			<div class="navbox" id="nbarid">
 				<div class="dropdown">
-					<div class="dropdownbutton">☰Menu</div>
+					<div class="dropdownbutton">Matches</div>
 					<div class="dropdowncontent">
-						<a href="#">Link1</a>
-						<a href="#">Link2</a>
-						<a href="#">Link3</a>
+						<a href="#">Wrestlemania</a>
+						<a href="#">Summerslam</a>
+						<a href="#">Live Televised</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<div class="dropdownbutton">Personal Life</div>
+					<div class="dropdowncontent">
+						<a href="#">Biography</a>
+						<a href="#">Children</a>
+						<a href="#">Net Worth</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<div class="dropdownbutton">Socials of bret Hart</div>
+					<div class="dropdowncontent">
+						<a href="#">Twitter</a>
+						<a href="#">Instagram</a>
+						<a href="#">Youtube</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<div class="dropdownbutton">Merch</div>
+					<div class="dropdowncontent">
+						<a href="#">Men</a>
+						<a href="#">Women</a>
 					</div>
 				</div>
 				<!--	<select id="courses"></select>-->
-				<select id="free material"></select>
-				<select id="store"></select>
 				<button id="GetStarted">Get Started</button><!--Should lead to a hero page-->
 				<button id="SignIn">Sign In</button>
 			</div>
 		</div>
+		<br>
 		<div id="content">
-			<div id="menu">
-				<header  id="">HelloHeader</header>
-				<aside id=""></aside>
-				<footer  id=""></footer>
+			<div id="sidebar">
+				<p>Check out more!</p>
+					<div class="menu-item">
+						Java Programming
+						<div class="dropdown-content">
+							<a href="#">Basics</a>
+							<a href="#">OOP</a>
+							<a href="#">Advanced Java/Java8</a>
+						</div>
+					</div>
+					<div class="menu-item">
+						Java Programming
+						<div class="dropdown-content">
+							<a href="#">Basics</a>
+							<a href="#">OOP</a>
+							<a href="#">Advanced Java/Java8</a>
+						</div>
+					</div>
+					<div class="menu-item">
+						Java Programming
+						<div class="dropdown-content">
+							<a href="#">Basics</a>
+							<a href="#">OOP</a>
+							<a href="#">Advanced Java/Java8</a>
+						</div>
+					</div>
+					<div class="menu-item">
+						Java Programming
+						<div class="dropdown-content">
+							<a href="#">Basics</a>
+							<a href="#">OOP</a>
+							<a href="#">Advanced Java/Java8</a>
+						</div>
+					</div>
 			</div>
 			<main>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<img src="assets\bretHart.png" alt="BretHart holding the winged eagle belt" style="height:100px;"></img>
+				<div class="typewriter">
+					<pre>The best there is<br>The best there was<br>The best there ever will be</pre>
+				</div>
 				<!--content-->
 			</main>
 		</div>

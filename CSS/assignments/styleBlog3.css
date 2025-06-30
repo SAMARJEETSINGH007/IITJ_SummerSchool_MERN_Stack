@@ -1,6 +1,23 @@
 body
 {
+	background:radial-gradient(circle at center,rgb(231, 91, 113) 0%, pink 100%);
 	font-family:monospace;
+	display:flex;
+	flex-direction:column;
+}
+#navigation
+{
+	position:sticky;
+	top:0;
+	background-color:white;
+	z-index:1000;
+}
+#content
+{
+	margin:120px;
+	/*border:1px solid black;*/
+	display:flex;
+	flex-direction:row;
 }
 #nbarid
 {
@@ -8,13 +25,18 @@ body
 }
 .navbox
 {
+	/*border:1px solid black;*/
 	margin-left:10px;
 	margin-right:10px;
 	display:flex;
 	align-items:center;
 	/*padding-left:10px;*/
 	height:50px;
-	justify-content:space-between;
+	justify-content:space-evenly;
+}
+#sidebar
+{
+	/*border:1px solid black;*/
 }
 header
 {
@@ -24,22 +46,21 @@ header
 }
 .navbox>*
 {
-	width:16%;
 	padding:10px;
 }
 
 .dropdown
 {
-	background-color:transparent;
 	position:relative;
 	display:inline-block;
 }
 .dropdownbutton
 {
+	/*border:1px solid blue;*/
+	display:inline;
 	cursor:pointer;
 	background-color:transparent;
 	color:black;
-	border:none;
 	padding:16px;
 	font-size:16px;
 }
@@ -50,16 +71,37 @@ header
 	min-width:160px;
 	padding:12px 16px;
 	color:black;
+	z-index:1;
+}
+.dropdowncontent a
+{
+	color:black;
+	padding: 12px 16px;
+	text-decoration:none;
+	display:block;
+	background-color:white;
 }
 .dropdowncontent a:hover
 {
-	color:red;
+	background-color:red;
+	font-weight:bold;
 }
 .dropdown:hover .dropdowncontent
 {
 	display:block;
 }
-.dropdown:hover .dropbtn
+.dropdown:hover .dropdownbutton
 {
-	background-color:red;
+	border-radius:1rem;
+	background-color:gold;
+}
+#GetStarted
+{
+	border-radius:1rem;
+	background-color:yellow;
+}
+#SignIn
+{
+	border-radius:1rem;
+	background-color:yellow;
 }
