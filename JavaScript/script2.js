@@ -168,12 +168,45 @@ function processNumber(baseNumber,callback)
 		,incremented*2);
 	};
 processNumber(5,incrementByOne);
-
-
-
-
-
-
+//NOW WITH THE ASSIGNMENT COMPLETE,WE GO FOR MORE ABOUT FUNCTIONS.
+function lionVoice(name,callback)
+{
+	console.log(`The animal ${name} has the voice`);
+	callback();
+};
+function roar()
+{
+	console.log("roar!!!");
+};
+lionVoice("Lion",roar);
+//------------------FOR EACH----------
+//.FIRST OF ALL IT IS NOT A LOOP RATHER A FUNCTION.
+let subjects=["hindi","english","punjabi"];
+subjects.forEach(subject=>
+	{
+		console.log(`${subject} I know!!!`);
+	});
+//IT IS JUST USED IN THE ACT OF LOOPING AND COPYING THE ELEMENTS 
+//INTO THE ORIGINAL ARRAY.
+//See, the filter is used in order to check any concerned 
+//condition. tareeka wahi h ki array pe call karo filter and 
+//inside it create a var and on that u will work...
+let chocolates=[1,2,3,4];
+let doubleChocolates=chocolates.map(choco=>choco*2);
+console.log(chocolates,doubleChocolates);
+let gaddi=["WagonR","HondaCity","Swift"];
+let suzukiDiGaddi=gaddi.filter
+(
+	car=>car.includes("WagonR")
+);
+console.log(suzukiDiGaddi);
+//------------------REDUCE--------------
+let arr=[1,2,3,4,5];
+let sum1=arr.reduce((total,coin)=>total+coin,0);
+console.log(`${sum1}`);
+//SO THE REASON WHY I NEED NOT SPECIFY WHAT THE total AND WHAT THE 
+//coin ARE: THEY ARE ARGUMENTS TO REDUCE. THE accumulator and the
+//item.
 
 
 
