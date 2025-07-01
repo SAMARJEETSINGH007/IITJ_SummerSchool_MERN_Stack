@@ -1,0 +1,3 @@
+go over why do we need arrow functions in prompt. 
+go over the functions in js. 
+complete the revision of day 6.

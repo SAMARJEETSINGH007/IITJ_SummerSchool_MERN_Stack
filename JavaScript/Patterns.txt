@@ -1,0 +1,26 @@
+CREATION OF PROMPT.
+when you create a prompt, at that time you have to do the following
+create the const of the concerned css element on which you would add the eventListener. Also have a log or multiple logs on which u are going to show
+your message...you must go like this
+const variable_Element=document.querySelector("#elementID");
+(say it is like a document ie the prompt and you are showing it to the user that is why u are using the document.)
+(query selector is just for identifying the css element)
+similarly, you have the log. It is actually  <pre> but you had id as log
+const message=document.querySelector("#log");
+now on the variable_Element you add the event listener.
+so you go like:
+variable_Element.addEventListener("click",()=>{});
+(add click to say 'what element it is!')
+(the arrow function is added as we just need to perform a function on it. need not name it.)
+now we can get prompt like
+--> this is inside the arrow function.
+(()=>{
+const popUp=prompt("Your first number here");<--the variable will automatically catch the value.
+});
+for log you can go like
+message.textContent=`number ${anyVariableYouHad}`
+and for alert you can go like 
+alert(`The sum is ${}`);
+PAY ATTENTION THAT IN PROMPT WE GO LIKE const/let/var var_name=prompt(""); 
+IN ALERT WE GO LIKE 				      	       alert=("");
+IN LOG YOU GO LIKE			var_log.textContent=``;
