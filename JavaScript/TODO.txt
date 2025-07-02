@@ -1,3 +1,10 @@
 go over why do we need arrow functions in prompt. 
 go over the functions in js. 
 complete the revision of day 6.
+Go over the function methods in day 6
+Revise this argument over the for each loop
+
+
+
+
+

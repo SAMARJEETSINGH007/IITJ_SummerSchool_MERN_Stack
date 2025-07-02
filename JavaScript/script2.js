@@ -207,19 +207,12 @@ console.log(`${sum1}`);
 //SO THE REASON WHY I NEED NOT SPECIFY WHAT THE total AND WHAT THE 
 //coin ARE: THEY ARE ARGUMENTS TO REDUCE. THE accumulator and the
 //item.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//HIGHER ORDER FUNCTIONS
+//BASICALLY THAT FUNCTION WHICH ACCEPTS OR RETURNS ANOTHER FUNCTION.
+function team(foo,a)
+{
+	return "These make good"+foo(a)+" team";
+}
+let femaleTeam=x=>x="Math";
+let maleTeam=(x)=>x="Science";
+console.log(team(femaleTeam,"Math"));
