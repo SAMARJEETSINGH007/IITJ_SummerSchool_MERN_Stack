@@ -3,8 +3,6 @@ go over the functions in js.
 complete the revision of day 6.
 Go over the function methods in day 6
 Revise this argument over the for each loop
-
-
-
-
-
+In here I didn't get the idea behind the usage of object declaration in the map() for thisArg. Why do we get the undefined in that case?like why does 
+it go from say return num*=this.multiplier to return num*=undefined when we do say 'const arrNumDouble=arr.map(obj.multiplier,obj2);' why obj2?
+In filter do flattening array, grouping objects.

@@ -72,27 +72,99 @@ const evenSquare=(
 console.log("The even sq. numbers are-->"+evenSquare);
 
 
+//NOW GOING OVER THE USAGE OF this ARG IN map()
+const arrX=[1,2,3,4,5];
+/*const arg=
+	{
+		factor:2,//Why not ; but , and why : not =
+		multiply(num)
+		{
+			num*=this.factor;
+		}
+	};
+*/
+/*const multiplier={};THIS MEANS I AM ASSIGNING THE VARIABLE MULTIPLIER SOME OBJECT. U CAN CHECK BY DOING console.log(typeof(multiplier)) AND YOU WILL
+ GET AND OBJECT*/
+const obj={factor:10};//YEAH WHEN YOU PROVIDE SOME PROPERTIES TO THE OBJECT IN THIS CASE YOU USE key:value not key=value. ITS A PAIR NOT AN ASSIGNMENT
+console.log(typeof(obj));
+const obj2=
+{
+	key1:100,
+	key2:function(numA)//HERE I HAVE INITIALISED A FUNCTION. EVEN THOIGH YOU COULD GO LIKE key(numA){} THIS ONE APPEARS MORE READABLE AS BEGINNER
+	{
+//		return numA*=key1; WHY IN HERE i AM GETTING KEY1 NOT DEFINED ERROR?
+		return numA*=this.key1;
+	}
+};
+const arrZ=[1,2,3,4,5];
+const arrY=arrZ.map(obj2.key2,obj2);//Why I need to pass obj2 in here when I have used obj2.key2
+console.log(arrY);
+//SO LET US NOW DO THE filter and use it to 
+//a)FILTER OUT THE FALSY VALUES.
+let arrF=[10,undefined,"10",0,false,null];//SO APPARENTLY WE CANNOT PROVIDE NaN IN THE CASE OF arr
+let filteredArr=arrF.filter(Boolean);
+console.log(filteredArr);
+//NOW USING filter() TO FILTER THE OBJECT
+let n=
+	[
+		{name:"Samar",rollNo:76},
+		{name:"Astha",rollNo:75},
+		{name:"Siddhant",rollNo:77}
+	];
+let filtered=n.filter(users=>users.rollNo>75);
+console.log(filtered);
 
+//USING REDUCE. SO FIRSTLY USING REDUCE TO 
+//A) CAPTURE THE LARGEST ELEMENT B) COUNT OF ELEMENT
+let elements=[1,2,3,4,4,5,1,2,3,4,1,2,5,5,5];
+let largestElement=elements.reduce((acc,num)=>acc>num?acc:num);
+console.log(largestElement);
+const numCount=function foo(num,count)
+{
+	count
+};
+let elementsA=["apple","banana","apple","banana","apple","mango","mango","mango"];//DEFINED THE ARRAY.
+let count=elementsA.reduce((accumulator,word)=>//CALLED reduce METHOD ON IT. ARGUMENTS ARE accumulator AND index.DEFINED AN ARROW FUNCTION
+	{
+/*Why Nan if have +=*/		accumulator[word]=(accumulator[word] || 0)+1;//YOU HAVE THE WORD AND THEN YOU INCREASE THE COUNT 
+//LOGIC: YOU OR IT IE ADD THE VALUE OF 0 TO IT i.e. INITIALISING IT AND THEN IT IT OCCURS AGAIN, YOU INCREASE THE VALUE BY 1.
+		return accumulator;//NEED TO RETURN THE accumulator[word] AS WE ARE STORING THE VALUE IN SOME VARIABLE
+	},{});
+/*The callback function updates acc and returns it again.
 
+Example for your array:
+["apple", "banana", "apple", "orange", "banana", "apple"]
 
+1st iteration:
 
+acc = {}
 
+word = "apple"
 
+(acc["apple"] || 0) + 1 → 0 + 1 = 1
 
+acc = { apple: 1 }
 
+2nd iteration:
 
+acc = { apple: 1 }
 
+word = "banana"
 
+(acc["banana"] || 0) + 1 → 0 + 1 = 1
 
+acc = { apple: 1, banana: 1 }
 
+3rd iteration:
 
+acc = { apple: 1, banana: 1 }
 
+word = "apple"
 
+(acc["apple"] || 0) + 1 → 1 + 1 = 2
 
+acc = { apple: 2, banana: 1 }
 
-
-
-
-
-
+…and so on.*/
+console.log(count);
 
