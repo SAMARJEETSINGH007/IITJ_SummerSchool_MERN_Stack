@@ -6,3 +6,6 @@ Revise this argument over the for each loop
 In here I didn't get the idea behind the usage of object declaration in the map() for thisArg. Why do we get the undefined in that case?like why does 
 it go from say return num*=this.multiplier to return num*=undefined when we do say 'const arrNumDouble=arr.map(obj.multiplier,obj2);' why obj2?
 In filter do flattening array, grouping objects.
+Why is REST called as REST while SPREAD is called as SPREAD in js?
+What can be use Case of clearTimeout?
+https://www.youtube.com/watch?v=1Z7FjG--F20 watch the rest part of asynch function in JS. (IMPORTANT)
