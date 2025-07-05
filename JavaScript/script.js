@@ -1,4 +1,6 @@
 let name = 3;
+:xa
+
 console.log(name);
 let car=
 	{
