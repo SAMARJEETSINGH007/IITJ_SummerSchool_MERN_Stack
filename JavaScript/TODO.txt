@@ -9,3 +9,4 @@ In filter do flattening array, grouping objects.
 Why is REST called as REST while SPREAD is called as SPREAD in js?
 What can be use Case of clearTimeout?
 https://www.youtube.com/watch?v=1Z7FjG--F20 watch the rest part of asynch function in JS. (IMPORTANT)
+Why is inneText behaving same as the textContent?
