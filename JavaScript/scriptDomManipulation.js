@@ -28,9 +28,42 @@ console.log(demo.textContent);
 //A) GET ANY ATTRIBUTE VALUE
 const logo = document.getElementById("logo");
 
-logo.setAttribute("src", "logo2.png"); // Change image
-logo.setAttribute("alt", "New Logo");  // Change alt text
+//logo.setAttribute("src", "logo2.png"); // Change image
+//logo.setAttribute("alt", "New Logo");  // Change alt text
 
-console.log(logo.getAttribute("alt")); // "New Logo"
+//console.log(logo.getAttribute("alt")); // "New Logo"
 //OTHER PROPS: getElementById, getElementByClassName,getElementByTagName
-//
+//queryselector,querySelectorAll... querySelector: USED BY SELECTING THE
+//CSS SELECTOR
+//SO OKAY BIG BOY, LET'S BUILD A DOM SELECTOR PLAYGROUND.
+//GO TO indexDomSelectionPlaygorund.html and srcDmoManipulation.js
+//NOW BACK AT IT AGAIN... YOU HAVE THE DIFFERENCE IN HTML COLLECTION AND ARRAYS.
+const test=document.getElementsByClassName("class");
+console.log(test.constructor.name);
+//IN HTML COLLECTION YOU SEE THE LIVE CHANGES BUT IN THE ARRAYS THOUGH YOU NEED NOT HAVE THE arrays.from() METHOD, THEY ARE NOT LIVE IN NATURE. YOU NEED
+//TO RELOAD THE PAGE TO SEE THEM...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

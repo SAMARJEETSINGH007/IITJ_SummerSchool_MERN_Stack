@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <title>Dom Selector Playground!</title>
+	    <style>
+		.huh
+		{
+			background-color:yellow;
+			border: 2px solid red;
+		}
+	    </style>
+	</head>
+	<body>
+		<h1 id="mainTitle">Change color by Class name</h1>
+		<br>
+		<p class="text">Hello! tough guy!</p>
+		<br>
+		<p class="text">Hello World!</p>
+		<br>
+		<button onclick="highlightById()">Highlight by id!</button>
+		<br>
+		<button onclick="highlightByClass()">Highlight by class!</button>
+		<br>
+		<button onclick="highlightAll()">Highlight All</button>
+		<br>
+		<button onclick="clearHighlight()">Clear All</button>
+		<br>
+		<script>
+			function highlightById()
+			{
+				const title=document.getElementById("mainTitle");
+				title.classList.add("huh");
+			}
+			function highlightByClass()
+			{
+				const texts=document.getElementsByClassName("text")
+				Array.from(texts).forEach(el=>el.classList.add("huh"));
+			}
+			function highlightAll()
+			{
+				const all=document.querySelectorAll("p");
+//				Array.from(all).forEach(el=>el.classList.add("huh"));
+				all.forEach(p=>p.classList.add("huh"));
+			}
+			function clearHighlight()
+			{
+				const all=document.querySelectorAll(".huh");
+				all.forEach(p=>p.classList.remove("huh"));
+			}
+		</script>
+	</body>
+</html>
+<!--WHY TO USE THE Array IN SOME CASES AND TO USE all.forEach() IN OTHERS
+Array.forEach() when you dont have the elements in the form of an array. you need to convert them to the same.
+BUT WHEN YOU HAVE AN ARRAY LIKE DATA, YOU CAN USE THEM WITHOUT CONVERTING THEM INTO ARRAY. LIKE THE nodelist WHICH BTW IS RETURNED BY THE querySelectorAll()...-->

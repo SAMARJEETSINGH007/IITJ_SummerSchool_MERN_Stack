@@ -8,5 +8,12 @@ it go from say return num*=this.multiplier to return num*=undefined when we do s
 In filter do flattening array, grouping objects.
 Why is REST called as REST while SPREAD is called as SPREAD in js?
 What can be use Case of clearTimeout?
-https://www.youtube.com/watch?v=1Z7FjG--F20 watch the rest part of asynch function in JS. (IMPORTANT)
 Why is inneText behaving same as the textContent?
+
+<IMPORTANT>
+Go for Advanced DOM manipulation
+DO the Event handling...
+https://www.youtube.com/watch?v=-BUMW6HbYgc:Same origin policy in js
+https://chatgpt.com/c/686b6c0f-284c-8001-97e2-ef5a9d9024e9 this contains
+a) how the browser imports files and 
+b) why file:// has no origin.
