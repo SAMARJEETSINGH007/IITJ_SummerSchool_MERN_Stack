@@ -1,0 +1,32 @@
+body
+{
+    background-color: #732748;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+}
+.entry_point
+{
+    background-color: #A52CC8;
+    position:relative;
+    height:100px;
+    width:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border:1px darkred solid;
+    border-radius: 1rem;
+    padding:0.5rem;
+}
+#btnShowWeather
+{
+    color:white;
+    padding:0.5rem;
+    background-color: #203470;
+    border-radius: 0.5rem;
+}
+/*#E891F8 for dsiplay*/
+/*857024bfffbec84b0b7360555dfd3994*/

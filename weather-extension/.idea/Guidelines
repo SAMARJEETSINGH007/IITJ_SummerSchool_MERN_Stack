@@ -1,0 +1,67 @@
+Assignment 6: Chrome Extension – Check Weather from Current Location
+🎯 Objective:
+Create a Chrome Extension that fetches and displays the current weather
+based on the user’s real-time location using a public API.
+
+📦 What You Will Build:
+A simple extension with a popup interface that:
+Requests the user's current location
+Sends that location to a public weather API
+Displays basic weather details (temperature, city, condition)
+
+📁 Project Structure:
+Create a folder named weather-extension with the following files:
+weather-extension/
+├── manifest.json
+├── popup.html
+├── popup.js
+├── styles.css
+└── icons/
+    └── icon.png (your own weather icon)
+
+📝 Instructions:
+1️⃣ Setup manifest.json (OK)
+Use Manifest V3
+Define your extension name, version, description
+Add permissions:
+"geolocation"
+"host_permissions" for a weather API domain (e.g., OpenWeatherMap)
+
+2️⃣ Create popup.html
+Design a popup that includes:
+A heading
+A button to trigger weather fetching
+A section to display weather results
+
+3️⃣ Add Styling (styles.css)
+Use CSS to make the popup look clean and centered. Keep it minimal.
+
+4️⃣ Write popup.js
+Use the Geolocation API to get user coordinates
+Call a weather API (e.g., OpenWeatherMap) with fetch()
+Display:
+City name
+Current temperature
+Weather condition
+
+5️⃣ Load Your Extension
+Go to chrome://extensions
+Enable Developer Mode
+Click Load Unpacked
+Select your weather-extension folder
+
+Test the popup!
+
+💡 Tips:
+You’ll need a free API key from a public weather service
+Try https://openweathermap.org
+Make sure your extension has internet access (set correct permissions)
+Show an error message if:
+User denies location
+The API fails
+
+🧪 Bonus Challenges (Optional):
+Show a weather icon based on conditions
+Store last result using localStorage
+Add a switch to change between °C / °F
+Add loading animation while data is being fetched
