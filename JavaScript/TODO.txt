@@ -17,3 +17,8 @@ https://www.youtube.com/watch?v=-BUMW6HbYgc:Same origin policy in js
 https://chatgpt.com/c/686b6c0f-284c-8001-97e2-ef5a9d9024e9 this contains
 a) how the browser imports files and 
 b) why file:// has no origin.
+you have learnt how to make a fetch call, now do the following in the div-->
+a)lead to another html page showing the relevant data
+b)also show some animations
+c)put some interpretaions and elseif ladder to show certain animations in certain truthy condition
+d)also put in the way, use set inner text to show that data...
